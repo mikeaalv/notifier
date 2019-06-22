@@ -15,7 +15,7 @@ notify_macos <- function(msg, title, image) {
   args <- c(
     "-message", msg,
     "-title", title,
-    "-sender", bundle_id,
+    "-sender", "terminal notifier",
     if (! is.null(image)) c("-contentImage", normalizePath(image))
   )
 
